@@ -30,6 +30,12 @@ EOF
 sudo a2ensite "$DOMAIN"
 sudo systemctl reload apache2
 
+# Install Certbot and setup SSL
+sudo apt update
+sudo apt install -y certbot python3-certbot-apache
+sudo certbot --apache -d $DOMAIN -d www.$DOMAIN
+sudo systemctl reload apache2
+
 # Create MySQL database and user
 echo "Enter MySQL root password:"
 read -s ROOT_PASS
