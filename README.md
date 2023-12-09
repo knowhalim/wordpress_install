@@ -11,10 +11,10 @@ Steps
 Then go to your domain and install your wordpress.
 
 Other optional stuffs (but useful if you are scraping):
-`sudo apt update
-sudo apt install php-curl
-sudo apt install php7.4-curl
-nano /etc/php/7.4/apache2/php.ini
-extension=curl
-sudo systemctl restart apache2
-sudo systemctl restart php7.4-fpm`
+`sudo apt update`
+`sudo apt install php-curl`
+`sudo apt install php7.4-curl`
+`nano /etc/php/7.4/apache2/php.ini`
+Look for `;extension=curl` and change to `extension=curl`
+`sudo systemctl restart apache2`
+`sudo systemctl restart php7.4-fpm`
