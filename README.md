@@ -8,4 +8,13 @@ Steps
 4) `sudo ./wordpress_setup.sh`
 5) `sudo chown -R www-data:www-data /var/www/yourdomain.com/public_html`
 
-Then go to your domain and install your wordpress
+Then go to your domain and install your wordpress.
+
+Other optional stuffs (but useful if you are scraping):
+`sudo apt update
+sudo apt install php-curl
+sudo apt install php7.4-curl
+nano /etc/php/7.4/apache2/php.ini
+extension=curl
+sudo systemctl restart apache2
+sudo systemctl restart php7.4-fpm`
