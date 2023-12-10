@@ -21,7 +21,7 @@ sudo tee "$VHOST_CONF" <<EOF
     ServerName $DOMAIN
     ServerAlias www.$DOMAIN
     DocumentRoot $DOC_ROOT
-    <Directory /var/www/html/iwprobot.com>
+    <Directory /var/www/html/$DOMAIN>
       Options -Indexes +FollowSymLinks
       AllowOverride All
   </Directory>
