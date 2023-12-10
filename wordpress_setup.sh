@@ -21,6 +21,10 @@ sudo tee "$VHOST_CONF" <<EOF
     ServerName $DOMAIN
     ServerAlias www.$DOMAIN
     DocumentRoot $DOC_ROOT
+    <Directory /var/www/html/iwprobot.com>
+      Options -Indexes +FollowSymLinks
+      AllowOverride All
+  </Directory>
     ErrorLog \${APACHE_LOG_DIR}/$DOMAIN-error.log
     CustomLog \${APACHE_LOG_DIR}/$DOMAIN-access.log combined
 </VirtualHost>
