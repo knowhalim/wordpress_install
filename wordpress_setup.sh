@@ -21,7 +21,7 @@ sudo tee "$VHOST_CONF" <<EOF
     ServerName $DOMAIN
     ServerAlias www.$DOMAIN
     DocumentRoot $DOC_ROOT
-    <Directory /var/www/html/$DOMAIN>
+    <Directory /var/www/$DOMAIN/public_html>
       Options -Indexes +FollowSymLinks
       AllowOverride All
   </Directory>
