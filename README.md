@@ -1,4 +1,4 @@
-# wordpress_install
+# Wordpress installation wizard
 This is a bash file to install wordpress. it assumes you have lamp installed
 
 Steps
