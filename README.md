@@ -10,6 +10,12 @@ Steps
 
 Then go to your domain and install your wordpress.
 
+# Common Problems
+You might encounter problems during the installation if you did not point your domain to your IP before running step 4.
+
+Solution: Point domain to your IP.
+
+# Optional 
 Other optional stuffs (but useful if you are scraping):
 1) `sudo apt update`
 2) `sudo apt install php-curl`
