@@ -13,7 +13,10 @@ Then go to your domain and install your wordpress.
 # Common Problems
 You might encounter problems during the installation if you did not point your domain to your IP before running step 4.
 
-Solution: Point domain to your IP.
+Solution: 
+
+1) Point domain to your IP.
+2) Run `sudo certbot` and follow the instructions
 
 # Optional 
 Other optional stuffs (but useful if you are scraping):
