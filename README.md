@@ -18,6 +18,10 @@ Solution:
 1) Point domain to your IP.
 2) Run `sudo certbot` and follow the instructions
 
+You should end up with
+` - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/path`
+
 # Optional 
 Other optional stuffs (but useful if you are scraping):
 1) `sudo apt update`
