@@ -8,7 +8,7 @@ sudo a2enmod rewrite
 DOC_ROOT="/var/www/$DOMAIN/public_html"
 DB_NAME="${DOMAIN//./_}_db"
 DB_USER="${DOMAIN//./_}_user"
-DB_PASS="$(openssl rand -base64 12)"
+DB_PASS="$(date +%s%N | md5sum | head -c 12)"
 
 # Create document root, set permissions
 sudo mkdir -p "$DOC_ROOT"
