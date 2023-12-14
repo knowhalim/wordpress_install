@@ -3,6 +3,7 @@
 echo "Enter the domain name (e.g., example.com):"
 read DOMAIN
 
+sudo a2enmod rewrite
 # Define variables
 DOC_ROOT="/var/www/$DOMAIN/public_html"
 DB_NAME="${DOMAIN//./_}_db"
