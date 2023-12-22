@@ -66,5 +66,7 @@ sudo sed -i "s/username_here/$DB_USER/" wp-config.php
 sudo sed -i "s/password_here/$DB_PASS/" wp-config.php
 
 sudo chown -R www-data:www-data /var/www/$DOMAIN/public_html
-
+#Removing unneeded plugins
+rm -R /var/www/$DOMAIN/public_html/wp-content/plugins/akismet
+rm -R /var/www/$DOMAIN/public_html/wp-content/plugins/hello.php
 echo "WordPress installation for $DOMAIN is ready. Please complete the installation through the web interface."
