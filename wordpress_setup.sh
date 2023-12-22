@@ -65,4 +65,6 @@ sudo sed -i "s/database_name_here/$DB_NAME/" wp-config.php
 sudo sed -i "s/username_here/$DB_USER/" wp-config.php
 sudo sed -i "s/password_here/$DB_PASS/" wp-config.php
 
+sudo chown -R www-data:www-data /var/www/$DOMAIN/public_html
+
 echo "WordPress installation for $DOMAIN is ready. Please complete the installation through the web interface."
